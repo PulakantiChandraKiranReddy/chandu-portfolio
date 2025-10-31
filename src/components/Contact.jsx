@@ -44,7 +44,7 @@ const Contact = () => {
                     <article className="contact__option">
                         <TbBrandLinkedin className='contact__option-icon' />
                         <h4>Linkedin</h4>
-                        <h5>Chandu Reddy</h5>
+                        <h5>Chandra Kiran Reddy</h5>
                         <a href="https://www.linkedin.com/in/chandu-reddy-258b94257/" target="_blank">Send a message</a>
                     </article>
                 </div>
