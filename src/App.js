@@ -6,13 +6,15 @@ import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx'
 import Header from './components/Header.jsx'
 import Nav from './components/Nav.jsx';
+import WorkExperience from './components/WorkExperience.jsx';
 
 const App = () => {
   return (
       <>
           <Header />
           <Nav />
-          <About />
+      <About />
+      <WorkExperience />
           <Experience />
           <Services />
           <Portfolio />

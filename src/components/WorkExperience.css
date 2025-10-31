@@ -1,0 +1,233 @@
+/* WorkExperience.css */
+
+#work-experience {
+  /* padding: 5rem 1.5rem; */
+  /* background: linear-gradient(to bottom, #18181b, #000000); */
+  color: #fff;
+}
+
+.work-experience__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Header Styles */
+.work-experience__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.work-experience__header h5 {
+  color: #fda4af !important;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* .work-experience__header h2 {
+  font-size: 3rem !important;
+  font-weight: 700;
+  color: #fde68a !important;
+  margin-bottom: 0 !important;
+  background: linear-gradient(to right, #fecaca, #e9d5ff, #fde68a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+} */
+
+/* Grid Layout */
+.work-experience__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .work-experience__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Card Styles */
+.work-experience__card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(39, 39, 42, 0.5), rgba(24, 24, 27, 0.5));
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(63, 63, 70, 0.5);
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.work-experience__card:hover {
+  border-color: rgba(251, 113, 133, 0.5);
+  box-shadow: 0 25px 50px -12px rgba(251, 113, 133, 0.1);
+  transform: translateY(-0.5rem);
+}
+
+/* Current Badge */
+.work-experience__badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: linear-gradient(to right, #A68F97, #A68F97);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.375rem 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/* Company Section */
+.work-experience__company {
+  margin-bottom: 1.5rem;
+}
+
+/* .work-experience__company h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fde68a;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+} */
+
+.work-experience__card:hover .work-experience__company h3 {
+  color: #fef3c7;
+}
+
+.work-experience__subtitle {
+  font-size: 0.875rem;
+  color: #a1a1aa;
+  margin-bottom: 0.25rem;
+}
+
+.work-experience__location {
+  color: #fda4af;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+/* Role Box */
+.work-experience__role-box {
+  background-color: rgba(39, 39, 42, 0.8);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(63, 63, 70, 0.5);
+}
+
+.work-experience__role {
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.work-experience__period {
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Achievements */
+.work-experience__achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.work-experience__achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.work-experience__achievement-item:hover {
+  transform: translateX(0.25rem);
+}
+
+.work-experience__achievement-item:hover p {
+  color: white;
+}
+
+.work-experience__bullet {
+  flex-shrink: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, #fd8194, #c294ad);
+  margin-top: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.work-experience__achievement-item:hover .work-experience__bullet {
+  transform: scale(1.5);
+}
+
+.work-experience__achievement-item p {
+  color: #d4d4d8;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+/* Decorative Corner */
+.work-experience__corner-accent {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8rem;
+  height: 8rem;
+  background: radial-gradient(circle at bottom right, rgba(251, 113, 133, 0.05), transparent);
+  border-radius: 100% 0 0 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.work-experience__card:hover .work-experience__corner-accent {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .work-experience__container {
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #work-experience {
+    padding: 3rem 1rem;
+    margin-top: 6rem;
+  }
+
+  .work-experience__header h2 {
+    font-size: 2rem !important;
+  }
+
+  .work-experience__card {
+    padding: 1.5rem;
+  }
+
+  .work-experience__company h3 {
+    font-size: 1.25rem;
+  }
+
+  .work-experience__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .work-experience__container {
+    width: var(--container-width-sm);
+  }
+}
