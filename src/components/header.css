@@ -68,12 +68,19 @@ header {
     }
 }
 
-/*============== scroll down ==============*/
-@media screen and (max-width: 1024px) {
+/*============== Small devices adjustments ==============*/
+@media screen and (max-width: 600px) {
     header {
         height: 100vh;
     }
 
+    .me {
+        width: 14rem;
+        height: 19rem;
+        left: calc(50% - 7rem);
+        margin-top: 2rem;
+        padding: 3rem 1rem 1rem 1rem;
+    }
 
     .header__socials,
     .scroll__down {
