@@ -14,7 +14,7 @@ const data = [
     {
         id: 0,
         image: IMG8,
-        title: 'TinyLink - URL Shortener using MERN Stack',
+        title: 'TinyLink - URL Shortener using Next.js',
         github: 'https://github.com/PulakantiChandraKiranReddy/tinylink.git',
         demo: 'https://tinylink-pqo1.vercel.app/',
 
